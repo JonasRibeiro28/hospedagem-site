@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensagem para Lucianna</title>
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        @keyframes sparkle {
+            0% { opacity: 0.5; }
+            50% { opacity: 1; }
+            100% { opacity: 0.5; }
+        }
+
+        @keyframes slideIn {
+            from { 
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to { 
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #E3F2FD 0%, #90CAF9 100%);
+            min-height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .message-container {
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(33, 150, 243, 0.2);
+            max-width: 800px;
+            text-align: center;
+            animation: fadeIn 1.5s ease-out;
+            margin-bottom: 40px;
+        }
+
+        .message {
+            font-size: 1.3em;
+            line-height: 1.8;
+            color: #1565C0;
+            margin-bottom: 30px;
+            animation: fadeIn 2s ease-out;
+        }
+
+        .highlight {
+            color: #E91E63;
+            font-weight: bold;
+            display: inline-block;
+            animation: heartbeat 1.5s infinite;
+        }
+
+        h1 {
+            color: #1976D2;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .qualities {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin: 30px 0;
+        }
+
+        .quality {
+            background: linear-gradient(135deg, #2196F3 0%, #64B5F6 100%);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-weight: bold;
+            animation: sparkle 2s infinite;
+        }
+
+        .heart {
+            color: #E91E63;
+            font-size: 1.5em;
+            animation: heartbeat 1.5s infinite;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            padding: 20px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(33, 150, 243, 0.2);
+            background: white;
+            animation: slideIn 0.8s ease-out forwards;
+            opacity: 0;
+        }
+
+        .gallery-item:nth-child(1) { animation-delay: 0.1s; }
+        .gallery-item:nth-child(2) { animation-delay: 0.2s; }
+        .gallery-item:nth-child(3) { animation-delay: 0.3s; }
+        .gallery-item:nth-child(4) { animation-delay: 0.4s; }
+        .gallery-item:nth-child(5) { animation-delay: 0.5s; }
+        .gallery-item:nth-child(6) { animation-delay: 0.6s; }
+        .gallery-item:nth-child(7) { animation-delay: 0.7s; }
+        .gallery-item:nth-child(8) { animation-delay: 0.8s; }
+
+        .gallery-item img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="message-container">
+        <h1>✨ Mensagem Especial para Lucianna ✨</h1>
+        <div class="message">
+            <div class="first-message">
+                NÃO IRIA MAIS TE MANDAR NENHUMA MENSAGEM MAS ME FALARAM QUE VOCÊ ANDA BEM DEPRESSIVA, CHORONA E TRISTE,<br>
+                OBS: ALGUEM DA SUA FAMILIA MANDOU MENSAGEM POIS NEM EU ESPERAVA QUE IAM ME MANDAR MENSAGEM<br>
+                ENTÃO FIZ ISSO PARA ANIMAR SEU DIA, SEMANA<br><br>
+                
+                AGORA SIM SERÁ A ÚLTIMA MENSAGEM<br>
+                BOM... ESTOU BEM, FELIZ,<br>
+                ainda te amo? talvez não vou falar que não e nem que sim<br>
+                mas estou bem muito feliz tudo dando certo e quero que as coisas dê certo para você<br>
+                então aqui vai para animar o seu dia ;) <span class="heart">❤️</span>
+            </div>
+
+            <div class="message-divider">
+                <hr style="border: none; border-top: 2px dashed #1976D2; margin: 30px 0;">
+            </div>
+
+            <div class="second-message">
+                VOU TE FALAR UMA ÚLTIMA VEZ POR TODAS: <span class="highlight">VOCÊ É INCRÍVEL!</span><br><br>
+                
+                A SUA FILHA TEM A MELHOR MÃE DO MUNDO! <span class="heart">💖</span><br>
+                VOCÊ, LUCIANNA MARQUES, ELA SABE TUDO QUE TU FEZ E FAZ E CONTINUA FAZENDO É PELO BEM DELA!<br><br>
+                
+                NÃO DEIXE O LUCIANO ENTRAR NA SUA MENTE E NENHUMA PESSOA!<br><br>
+                
+                <div class="qualities">
+                    <span class="quality">✨ INTELIGENTE</span>
+                    <span class="quality">✨ SIMPÁTICA</span>
+                    <span class="quality">✨ LINDA</span>
+                    <span class="quality">✨ BONITA</span>
+                    <span class="quality">✨ UMA DEUSA</span>
+                </div>
+                
+                <br>VOCÊ SABE QUE VOCÊ É!<br><br>
+                
+                ENTÃO SE ANIMA, SAIA, CURTE A VIDA, APROVEITA COM A MANUZINHA E NÃO DEIXE NINGUÉM TE ABALAR! 
+                <span class="heart">💖</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="foto1.png" alt="Foto 1">
+        </div>
+        <div class="gallery-item">
+            <img src="foto2.jpg" alt="Foto 2">
+        </div>
+        <div class="gallery-item">
+            <img src="foto3.jpg" alt="Foto 3">
+        </div>
+        <div class="gallery-item">
+            <img src="foto4.png" alt="Foto 4">
+        </div>
+        <div class="gallery-item">
+            <img src="foto5.jpg" alt="Foto 5">
+        </div>
+        <div class="gallery-item">
+            <img src="foto6.png" alt="Foto 6">
+        </div>
+        <div class="gallery-item">
+            <img src="foto7.png" alt="Foto 7">
+        </div>
+        <div class="gallery-item">
+            <img src="foto8.jpg" alt="Foto 8">
+        </div>
+    </div>
+</body>
+</html> 
